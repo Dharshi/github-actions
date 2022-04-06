@@ -26,4 +26,6 @@ jobs:
         env:
           SKIP_LOGIN: true
 
-      - run: docker --version
+      - run: | 
+      docker --version
+      docker run hello-world
