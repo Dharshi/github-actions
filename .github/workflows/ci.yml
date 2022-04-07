@@ -28,15 +28,17 @@ jobs:
 
       - run:  docker run hello-world
       
-      - name: Run multiline script
-        run:  |
-        echo where am I
-        pwd
-        echo
-        echo list all
-        ls -a
-        echo
-        echo Ruby installed
-        ruby -v
-        echo Git installed
-        git --version
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Aecho where am I,
+          pwd
+          echo
+          echo list all
+          ls -a
+          echo
+          echo Ruby installed
+          ruby -v
+          echo Git installed
+          git --version
+        
