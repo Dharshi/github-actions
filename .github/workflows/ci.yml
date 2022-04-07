@@ -27,3 +27,16 @@ jobs:
           SKIP_LOGIN: true
 
       - run:  docker run hello-world
+      
+      - name: Run multiline script
+        run:  |
+        echo where am I
+        pwd
+        echo
+        echo list all
+        ls -a
+        echo
+        echo Ruby installed
+        ruby -v
+        echo Git installed
+        git --version
